@@ -1,2 +1,2 @@
 # Responsive-NavBar
-This is aresponsive Navbar created using HTML, CSS and JavaScript.
+This is a responsive Navbar created using HTML, CSS and JavaScript.
