@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(255, 251, 251);
+}
+
+.title {
+    background-color: rgb(0, 186, 233);
+    height: 80px;
+    display: flex;
+    padding: 0px 70px 0px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: white;
+    font-size: 2rem;
+    margin-left: 70px;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    color: rgb(0, 233, 183);
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+@media screen and (max-width:920px) {
+    #menu {
+        position: fixed;
+        right: 15px;
+        width: 40px;
+        height: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .bar {
+        height: 5px;
+        width: 40px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 3px 0px;
+        transition: all 0.3s ease-in-out;
+    }
+   .icon #b2{
+        opacity: 0;
+    }
+    .icon #b1{
+        transform: translateY(12px) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+    }
+    .icon #b3{
+        transform:  translateY(-11px) rotate(45deg);
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    .navbar {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        transition: all 0.5s ease-out;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        background-color: rgb(53, 50, 50);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 30px 0px;
+    }
+    .navbar ul li a:hover{
+        border: 1px solid white;
+    }
+    .navbar ul li a:hover,
+    .navbar ul li a.active {
+        background: none;
+        color: rgb(0, 186, 233);
+        transition: all 0.4s ease;
+    }
+    .show{
+        right: 0px;
+        transition: all 0.5s ease;
+    }
+}
